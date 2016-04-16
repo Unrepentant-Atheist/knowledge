@@ -228,6 +228,18 @@ $ git push -u origin head       # push to current branchname on origin remote
 $ tag_commit="$(git rev-list --max-parents=0 HEAD)"
 ```
 
+## git branch status
+```sh
+$ git branch -vv
+```
+
+## create a new empty branch
+Create a new branch that's detached from the history from the branch that it's
+being forked off.
+```sh
+$ git checkout --orphan <branchname>
+```
+
 ## See Also
 - [how to undo almost anything with git](https://github.com/blog/2019-how-to-undo-almost-anything-with-git)
 - [git koans](http://stevelosh.com/blog/2013/04/git-koans/)

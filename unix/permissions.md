@@ -31,6 +31,15 @@ $ groupadd <name>
 ### add user to group
 ```sh
 $ sudo usermod -G <group> <user>
+$ sudo usermod -a -G docker ec2-user
+```
+
+### add hostname to /etc/hosts
+Sometime a 'host not found' error pops up. This means that the host is not in
+the hostfile. This is a common error on remote servers. In order to add the
+ip, create a mapping such as:
+```txt
+127.0.0.1 localhost  # alias localhost to 127.0.0.1
 ```
 
 ## passwords
